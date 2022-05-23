@@ -102,7 +102,7 @@ export const Form = () => {
     if (formData.preferedAlias) {
       generatedKey = formData.preferedAlias;
     }
-    let generatedUrl = "shortlink.com/" + generatedKey;
+    let generatedUrl = "mini-linker.herokuapp.com/" + generatedKey;
 
     set(ref(db, "/" + generatedKey), {
       generatedKey,
@@ -134,7 +134,7 @@ export const Form = () => {
     <div className="container">
       {console.log({ formData })}
       <form>
-        <h3>Mini Linkit</h3>
+        <h3>URl Shortner</h3>
         <div className="form_group">
           <label>Enter Your Long URL</label>
           <input
@@ -158,7 +158,9 @@ export const Form = () => {
           <label>Your Short URL</label>
           <div className="input-group mb-3">
             <div className="input-group-prepend">
-              <span className="input-group-text">shortlink.com</span>
+              <span className="input-group-text">
+                mini-linker.herokuapp.com
+              </span>
             </div>
             <input
               id="preferedAlias"
