@@ -1,0 +1,2 @@
+Create a Flask Server
+When ever user generates a short Link, and then runs it in the browser, we have to get the longUrl from database and redirect the user to that link.
