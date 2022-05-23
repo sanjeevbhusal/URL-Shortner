@@ -1,2 +1,11 @@
-Create a Flask Server
-When ever user generates a short Link, and then runs it in the browser, we have to get the longUrl from database and redirect the user to that link.
+Idea :When ever user generates a short Link, and then runs it in the browser, we have to get the longUrl from database and redirect the user to that link.
+
+Create a build folder for client(npm run build)
+Create a Flask Server and appropritae routes
+
+Packages and files : 
+gunicorn  = Package which helps to deploy the application in a virtual env.
+server/procfile = Heroku file
+server/privatekey = firebase config file.
+server/app/build = build folder fom react.
+wsgi => Web Server Gateway Interface
