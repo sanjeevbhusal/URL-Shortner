@@ -5,7 +5,12 @@ Create a Flask Server and appropritae routes
 
 Packages and files : 
 gunicorn  = Package which helps to deploy the application in a virtual env.
-server/procfile = Heroku file
+server/procfile = Heroku
 server/privatekey = firebase config file.
 server/app/build = build folder fom react.
 wsgi => Web Server Gateway Interface
+
+#Deploying to Heroku
+Add a heroku Project, login to CLI and add git remote.
+Then use command git subtree push --prefix server herok
+u master to only push the server folder as it already contains the client build.
